@@ -14,5 +14,16 @@ function create(n) {
     grid.appendChild(div);
   }
 }
+create(36);
 
-create(5);
+const random = () => Math.floor(Math.random() * 257);
+
+const paint = (box) =>
+  console.log(
+    (box.target.style.backgroundColor = `rgba(${random()}, ${random()}, ${random()}`)
+  );
+
+const node = document.querySelectorAll('.box');
+
+node.forEach((box) => box.addEventListener('mouseover', (e) => paint(e)));
+// console.log(node);

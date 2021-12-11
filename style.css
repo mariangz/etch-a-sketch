@@ -4,7 +4,7 @@
 
 .grid {
   display: grid;
-  border: 2px blue solid;
+  border: 1px black solid;
   width: 500px;
   height: 500px;
   grid-template: repeat(var(--boxNumber), 1fr) / repeat(var(--boxNumber), 1fr);
@@ -14,5 +14,7 @@
   background-color: beige;
   color: black;
   border-radius: 5px;
-  border: 2px dodgerblue solid;
+  border: 1px #eaeaea solid;
+  transition: all .2s ease-in;
 }
+
