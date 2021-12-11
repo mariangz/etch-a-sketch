@@ -1,0 +1,18 @@
+:root {
+  --boxNumber: 16;
+}
+
+.grid {
+  display: grid;
+  border: 2px blue solid;
+  width: 500px;
+  height: 500px;
+  grid-template: repeat(var(--boxNumber), 1fr) / repeat(var(--boxNumber), 1fr);
+}
+
+.box {
+  background-color: beige;
+  color: black;
+  border-radius: 5px;
+  border: 2px dodgerblue solid;
+}
