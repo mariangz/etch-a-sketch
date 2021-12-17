@@ -1,5 +1,13 @@
 :root {
   --boxNumber: 16;
+  --backgroundColor: #F4EDEA;
+}
+
+
+
+body {
+  background-color: var(--backgroundColor);
+  font-family: 'Rubik', sans-serif;
 }
 
 .grid {
