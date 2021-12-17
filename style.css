@@ -3,11 +3,34 @@
   --backgroundColor: #F4EDEA;
 }
 
-
-
 body {
   background-color: var(--backgroundColor);
   font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  
+}
+
+.range-container {
+  display: flex;
+  border: 1px solid red;
+  justify-content: center;
+
+}
+
+label, 
+button, 
+input {
+  display: block;
+}
+
+.title {
+  font-size: 18px;
 }
 
 .grid {
@@ -19,9 +42,7 @@ body {
 }
 
 .box {
-  background-color: beige;
   color: black;
-  border: 1px grey solid;
   transition: all .2s ease-in;
 }
 
