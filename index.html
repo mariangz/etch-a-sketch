@@ -16,28 +16,28 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1 class="title">ETCHASKETCH</h1>
-        <div class="range-container">
-          <label for="grid">+</label>
-          <input type="range" step="16" min="16" max="100" id="grid" />
-          <label for="grid" for="">+</label>
+      <header>
+        <div class="container header">
+          <h1 class="title">ETCHASKETCH</h1>
+          <div class="range-container">
+            <label for="grid">+</label>
+            <input type="range" step="4" min="4" max="32" id="range" />
+            <label for="grid" for="">+</label>
+          </div>
         </div>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <div class="grid"></div>
-      </div>
-    </main>
-    <footer class="container">
-      <div class="container">
-        <button>Reset</button>
-        <button>B&N</button>
-        <button>Rainbow</button>
-        <input type="color" name="" id="" />
-      </div>
-    </footer>
+      </header>
+      <main>
+        <div class="container">
+          <div class="grid"></div>
+        </div>
+      </main>
+      <footer class="container footer">
+        <!-- <div class="container buttons"> -->
+          <button class="btn left"></button>
+          <button class="btn blackwhite" id="blackWhite"></button>
+          <button class="btn" id="rainbow"></button>
+          <!-- <input  class="btn" type="color" > -->
+        <!-- </div> -->
+      </footer>
   </body>
 </html>
