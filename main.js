@@ -1,5 +1,7 @@
 const $blackWhite = document.getElementById('blackWhite');
 const $rainbow = document.getElementById('rainbow');
+const $pickColor = document.getElementById('pickColor');
+const $reset = document.getElementById('reset');
 const $range = document.getElementById('range');
 const $grid = document.querySelector('.grid');
 const black = '#000';
@@ -17,8 +19,8 @@ const paint = (node) => {
     );
   });
 };
-
 document.addEventListener('DOMContentLoaded', create(16));
+$reset.addEventListener('click', () => reset());
 $range.addEventListener('change', () => create($range.value));
 $rainbow.addEventListener('click', () => (choosedColor = undefined));
 $blackWhite.addEventListener('click', () => {
@@ -28,6 +30,15 @@ $blackWhite.addEventListener('click', () => {
     choosedColor = black;
   }
 });
+$pickColor.addEventListener('change', (e) => (choosedColor = e.target.value));
+
+function reset() {
+  const $node = document.querySelectorAll('.box');
+  if ($node.length > 0) {
+    create(16);
+    $range.value = 16;
+  }
+}
 
 function create(n) {
   remove();
