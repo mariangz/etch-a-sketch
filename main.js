@@ -1,6 +1,7 @@
 const $blackWhite = document.getElementById('blackWhite');
 const $rainbow = document.getElementById('rainbow');
 const $pickColor = document.getElementById('pickColor');
+const $pickColorContainer = document.querySelector('.pickColor');
 const $reset = document.getElementById('reset');
 const $range = document.getElementById('range');
 const $grid = document.querySelector('.grid');
@@ -30,7 +31,11 @@ $blackWhite.addEventListener('click', () => {
     choosedColor = black;
   }
 });
-$pickColor.addEventListener('change', (e) => (choosedColor = e.target.value));
+
+$pickColor.addEventListener('change', (e) => {
+  choosedColor = e.target.value;
+  $pickColorContainer.style.backgroundColor = choosedColor;
+});
 
 function reset() {
   const $node = document.querySelectorAll('.box');
