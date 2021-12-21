@@ -50,7 +50,6 @@ body {
 
 .left {
   margin-right: auto;
-  border-radius: 0;
 }
 .container.footer {
   width: 100%;
@@ -85,7 +84,6 @@ button,
 input {
   display: block;
   cursor: pointer;
-  border-radius: 4px;
 }
 
 input[type='range'] {
@@ -129,7 +127,7 @@ input[type='color'] {
 
 #reset {
   background-color: #fff;
-  border-radius: 0.7rem;
+  border-radius: 4px;
 }
 
 .icon {
