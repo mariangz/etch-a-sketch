@@ -19,6 +19,18 @@ const paint = (node) => {
     );
   });
 };
+
+const paintMobile = (node) => {
+  node.forEach((box) => {
+    box.addEventListener(
+      'touchmove',
+      (e) =>
+        (e.target.style.backgroundColor =
+          choosedColor || `rgb(${random()}, ${random()}, ${random()})`)
+    );
+  });
+};
+
 document.addEventListener('DOMContentLoaded', create(16));
 $reset.addEventListener('click', () => reset());
 $range.addEventListener('change', () => create($range.value));
