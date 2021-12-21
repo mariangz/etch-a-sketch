@@ -1,7 +1,7 @@
 :root {
   --boxNumber: 16;
-  --backgroundColor: #F4EDEA;
-  --dark-blue: #12263A;
+  --backgroundColor: #f4edea;
+  --dark-blue: #12263a;
 }
 
 body {
@@ -29,11 +29,15 @@ body {
 .range-container {
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .blackwhite {
-  background: linear-gradient(-45deg, rgba(18,38,58) 50%, rgba(255,255,255) 50%);
+  background: linear-gradient(
+    -45deg,
+    rgba(18, 38, 58) 50%,
+    rgba(255, 255, 255) 50%
+  );
 }
 
 .btn {
@@ -47,7 +51,6 @@ body {
 .left {
   margin-right: auto;
   border-radius: 0;
-  
 }
 .container.footer {
   width: 100%;
@@ -69,7 +72,7 @@ body {
 }
 
 .box {
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
   background-color: #fff;
 }
 
@@ -77,46 +80,45 @@ body {
   background-color: #000;
 }
 
-label, 
-button, 
+label,
+button,
 input {
   display: block;
   cursor: pointer;
   border-radius: 4px;
 }
 
-input[type=range] {
+input[type='range'] {
   appearance: none;
   background-color: var(--dark-blue);
   height: 5px;
   border-radius: 1rem;
   outline: none;
-  opacity: .8;
+  opacity: 0.8;
 }
 
-input[type=range]:hover {
+input[type='range']:hover {
   opacity: 1;
 }
 
-input[type=range]::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb {
   appearance: none;
   width: 1.3rem;
-  height: 1.3rem; 
+  height: 1.3rem;
   background: #fff;
-  cursor: pointer; 
+  cursor: pointer;
   border: 1px solid;
   border-radius: 100%;
 }
 
-input[type=color] {
-    visibility: hidden;
+input[type='color'] {
+  visibility: hidden;
 }
 
 .pickColor {
   background-color: var(--dark-blue);
   position: relative;
 }
-
 
 #rainbow {
   background-image: url(./icons/button-rainbow-2.svg);
@@ -127,7 +129,7 @@ input[type=color] {
 
 #reset {
   background-color: #fff;
-  border-radius: .7rem;
+  border-radius: 0.7rem;
 }
 
 .icon {
@@ -136,7 +138,8 @@ input[type=color] {
   top: 17px;
   right: 17px;
   color: rgb(14, 1, 1);
-  filter: invert(100%) sepia(0%) saturate(7447%) hue-rotate(271deg) brightness(100%) contrast(95%);
+  filter: invert(100%) sepia(0%) saturate(7447%) hue-rotate(271deg)
+    brightness(100%) contrast(95%);
 }
 
 .icon-range {
@@ -146,7 +149,6 @@ input[type=color] {
 .icon-reset {
   width: 27px;
 }
-
 
 /* media queries */
 @media screen and (min-width: 768px) {
@@ -159,19 +161,18 @@ input[type=color] {
     width: 380px;
     height: 380px;
   }
-  
+
   .container.footer {
     order: 1;
     flex-direction: column-reverse;
     margin-top: 47px;
   }
-  
+
   .left {
     margin-top: auto;
   }
 
-    .header-main {
+  .header-main {
     order: 2;
   }
 }
-
