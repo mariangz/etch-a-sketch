@@ -22,9 +22,9 @@
             <div class="container header">
               <h1 class="title">ETCHASKETCH</h1>
               <div class="range-container">
-                <label for="grid">+</label>
+                <label for="grid"><img src="./icons/icon-few-squares.svg" alt="less squares" class="icon-range"></label>
                 <input type="range" step="4" min="4" max="32" id="range" />
-                <label for="grid" for="">+</label>
+                <label for="grid" for=""><img src="./icons/icon-many-squares.svg" alt="more squares" class="icon-range"></label>
               </div>
             </div>
           </header>
@@ -35,12 +35,17 @@
           </main>
         </div>
         <footer class="container footer">
-          <!-- <div class="container buttons"> -->
-            <button class="btn left" id="reset"></button>
+            <button class="btn left" id="reset">
+              <img src="./icons/sync.svg" alt="reset" class="icon-reset">
+            </button>
             <button class="btn blackwhite" id="blackWhite"></button>
-            <button class="btn" id="rainbow"></button>
-            <input  class="btn" type="color" id="pickColor" >
-          <!-- </div> -->
+            <button class="btn" id="rainbow">
+            </button>
+            <div class="pickColor btn">
+              <label for="pickColor">
+                <input  type="color" id="pickColor" ><img class="icon" src="./icons/eye-dropper.svg">
+              </label>
+            </div>
         </footer>
       </div>
   </body>

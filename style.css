@@ -1,6 +1,7 @@
 :root {
   --boxNumber: 16;
   --backgroundColor: #F4EDEA;
+  --dark-blue: #12263A;
 }
 
 body {
@@ -27,6 +28,8 @@ body {
 
 .range-container {
   display: flex;
+  align-items: center;
+  gap: .5rem;
 }
 
 .blackwhite {
@@ -34,8 +37,8 @@ body {
 }
 
 .btn {
-  width: 50px;
-  height: 50px;
+  width: 57px;
+  height: 57px;
   border-radius: 100%;
   border: 1px solid;
   cursor: pointer;
@@ -78,7 +81,72 @@ label,
 button, 
 input {
   display: block;
+  cursor: pointer;
+  border-radius: 4px;
 }
+
+input[type=range] {
+  appearance: none;
+  background-color: var(--dark-blue);
+  height: 5px;
+  border-radius: 1rem;
+  outline: none;
+  opacity: .8;
+}
+
+input[type=range]:hover {
+  opacity: 1;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.3rem;
+  height: 1.3rem; 
+  background: #fff;
+  cursor: pointer; 
+  border: 1px solid;
+  border-radius: 100%;
+}
+
+input[type=color] {
+    visibility: hidden;
+}
+
+.pickColor {
+  background-color: var(--dark-blue);
+  position: relative;
+}
+
+
+#rainbow {
+  background-image: url(./icons/button-rainbow-2.svg);
+  background-repeat: no-repeat;
+  background-size: 143%;
+  background-position: center;
+}
+
+#reset {
+  background-color: #fff;
+  border-radius: .7rem;
+}
+
+.icon {
+  position: absolute;
+  width: 23px;
+  top: 17px;
+  right: 17px;
+  color: rgb(14, 1, 1);
+  filter: invert(100%) sepia(0%) saturate(7447%) hue-rotate(271deg) brightness(100%) contrast(95%);
+}
+
+.icon-range {
+  width: 18px;
+}
+
+.icon-reset {
+  width: 27px;
+}
+
 
 /* media queries */
 @media screen and (min-width: 768px) {
