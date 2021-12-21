@@ -22,9 +22,9 @@
             <div class="container header">
               <h1 class="title">ETCHASKETCH</h1>
               <div class="range-container">
-                <label for="grid"><img src="./icons/icon-few-squares.svg" alt="less squares" class="icon-range"></label>
-                <input type="range" step="4" min="4" max="32" id="range" />
-                <label for="grid" for=""><img src="./icons/icon-many-squares.svg" alt="more squares" class="icon-range"></label>
+                <div><img src="./icons/icon-few-squares.svg" alt="" class="icon-range"></div>
+                <input aria-label="grid size" type="range" step="4" min="4" max="32" id="range" />
+                <div><img src="./icons/icon-many-squares.svg" alt="" class="icon-range"></div>
               </div>
             </div>
           </header>
@@ -35,15 +35,15 @@
           </main>
         </div>
         <footer class="container footer">
-            <button class="btn left" id="reset">
+            <button class="btn left" id="reset" aria-label="reset">
               <img src="./icons/sync.svg" alt="reset" class="icon-reset">
             </button>
-            <button class="btn blackwhite" id="blackWhite"></button>
-            <button class="btn" id="rainbow">
+            <button class="btn blackwhite" id="blackWhite" aria-label="Bback or white"></button>
+            <button class="btn" id="rainbow" aria-label="random color">
             </button>
             <div class="pickColor btn">
               <label for="pickColor">
-                <input  type="color" id="pickColor" ><img class="icon" src="./icons/eye-dropper.svg">
+                <input  type="color" id="pickColor" ><img alt="pick color" class="icon" src="./icons/eye-dropper.svg">
               </label>
             </div>
         </footer>
