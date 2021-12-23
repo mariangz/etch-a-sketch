@@ -22,6 +22,18 @@ body {
   align-items: center;
 }
 
+.center-container {
+  flex-grow: 1;
+}
+
+.container.footer {
+  max-width: 380px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
 .container.header {
   justify-content: space-between;
 }
@@ -51,6 +63,7 @@ body {
 .left {
   margin-right: auto;
 }
+
 .container.footer {
   width: 100%;
   margin-top: 1rem;
@@ -73,6 +86,16 @@ body {
 .box {
   transition: all 0.2s ease-in;
   background-color: #fff;
+}
+
+a {
+  color: inherit;
+}
+
+.author {
+  width: 360px;
+  text-align: left;
+  margin-bottom: 2rem;
 }
 
 .black {
@@ -153,6 +176,12 @@ input[type='color'] {
   .center-container {
     display: flex;
     gap: 2rem;
+    flex-grow: 0;
+  }
+
+  .author {
+    margin-left: 69px;
+    margin-top: 3rem;
   }
 
   .grid {
