@@ -20,6 +20,7 @@ const paint = (node) => {
     );
   });
 };
+
 document.addEventListener('DOMContentLoaded', create(16));
 $reset.addEventListener('click', () => reset());
 $range.addEventListener('change', () => create($range.value));
