@@ -1,6 +1,6 @@
 # Etch A Sketch
 
-This time I built a browser version of something between a sketchpad and an Etch-A-Sketch.
+I built a browser version of something between a sketchpad and an Etch-A-Sketch.
 
 ![screenshot](https://i.postimg.cc/yYLY44kt/screenshot.png)
 
